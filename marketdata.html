@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Data</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Market Data</h1>
+
+        <div class="chart-container">
+            <canvas id="marketChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="pieChart"></canvas>
+        </div>
+
+        <button onclick="downloadMarketData()">Download Market Data</button>
+    </div>
+
+    <script src="marketdata.js"></script>
+</body>
+</html>

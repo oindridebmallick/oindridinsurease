@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fraud-container">
+        <h1>Fraud Detection & Alerts</h1>
+        <p>Enter claim details to check for fraud risks.</p>
+
+        <form id="fraudForm">
+            <label for="claimAmount">Claim Amount ($):</label>
+            <input type="number" id="claimAmount" required>
+
+            <label for="policyType">Policy Type:</label>
+            <select id="policyType">
+                <option value="health">Health</option>
+                <option value="auto">Auto</option>
+                <option value="life">Life</option>
+                <option value="home">Home</option>
+            </select>
+
+            <label for="claimHistory">Previous Claims (Last 2 years):</label>
+            <input type="number" id="claimHistory" required>
+
+            <button type="submit" class="detect-btn">Analyze for Fraud</button>
+        </form>
+
+        <div id="fraudResult" class="result-box"></div>
+
+        <h2>Fraud Trends & Prevention</h2>
+        <p>🔹 Common frauds: Fake medical bills, staged accidents, exaggerated damages.</p>
+        <p>🔹 Avoid fraud: Always keep proof, verify documents, and report suspicious claims.</p>
+    </div>
+
+    <script src="fraud.js"></script>
+</body>
+</html>

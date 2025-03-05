@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Assistance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚨 Emergency Assistance 🚨</h1>
+
+        <!-- Quick Contact Section -->
+        <div class="emergency-contacts">
+            <h2>📞 Need Urgent Help?</h2>
+            <button onclick="callSupport()">Call Insurance Helpline</button>
+            <button onclick="emailSupport()">Email Support</button>
+            <button onclick="startChat()">Live Chat</button>
+        </div>
+
+        <!-- Claim Assistance Section -->
+        <div class="claim-assistance">
+            <h2>📑 Report an Emergency Claim</h2>
+            <form id="claim-form">
+                <label for="policy-number">Policy Number:</label>
+                <input type="text" id="policy-number" required>
+
+                <label for="claim-type">Claim Type:</label>
+                <select id="claim-type">
+                    <option value="accident">Accident</option>
+                    <option value="hospitalization">Hospitalization</option>
+                    <option value="theft">Theft</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" placeholder="Describe the emergency..." required></textarea>
+
+                <button type="submit">Submit Claim</button>
+            </form>
+        </div>
+
+        <!-- Location-Based Help -->
+        <div class="location-help">
+            <h2>📍 Find Nearby Assistance</h2>
+            <button onclick="getLocation()">Find Nearest Insurance Office</button>
+            <p id="location-result"></p>
+        </div>
+    </div>
+
+    <script src="emergency-assistance.js"></script>
+</body>
+</html>

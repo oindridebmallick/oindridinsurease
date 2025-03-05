@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Insurance Recommendation</h1>
+        <form id="recommendation-form">
+            <label for="income">Yearly Income (in USD):</label>
+            <input type="number" id="income" name="income" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="coverage">Preferred Coverage Type:</label>
+            <select id="coverage" name="coverage">
+                <option value="health">Health Insurance</option>
+                <option value="life">Life Insurance</option>
+                <option value="vehicle">Vehicle Insurance</option>
+                <option value="property">Property Insurance</option>
+            </select>
+
+            <label for="dependents">Number of Dependents:</label>
+            <input type="number" id="dependents" name="dependents" required>
+
+            <label for="risk">Risk Tolerance:</label>
+            <select id="risk" name="risk">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <button type="button" onclick="recommendInsurance()">Get Recommendation</button>
+        </form>
+
+        <div id="recommendation-result"></div>
+    </div>
+    <script src="recommendations.js"></script>
+</body>
+</html>

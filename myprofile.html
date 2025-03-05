@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - InsurEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="profile-body">
+    <div class="profile-container">
+        <h1>My Profile</h1>
+        
+        <div class="profile-card">
+            <label for="profile-pic">
+                <img id="preview-pic" src="assets/default-profile.png" alt="Profile Picture">
+            </label>
+            <input type="file" id="profile-pic" accept="image/*" onchange="previewImage(event)">
+            
+            <h2 id="user-name">Your Name</h2>
+            <p id="verification-status">Verification Status: <span class="pending">Pending</span></p>
+        </div>
+
+        <form id="profile-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+
+            <label for="verification-doc">Upload National ID:</label>
+            <input type="file" id="verification-doc" accept="image/*, application/pdf">
+
+            <h3>Insurance Preferences</h3>
+            <select id="insurance-type">
+                <option value="health">Health Insurance</option>
+                <option value="life">Life Insurance</option>
+                <option value="auto">Auto Insurance</option>
+                <option value="home">Home Insurance</option>
+            </select>
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

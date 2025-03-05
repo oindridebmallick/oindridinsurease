@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Comparison</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="policy-comparison.js" defer></script>
+</head>
+<body>
+    <div class="comparison-container">
+        <h1>Compare Insurance Policies</h1>
+
+        <!-- Dropdown to select policies -->
+        <div class="dropdowns">
+            <label>Select Policy 1:
+                <select id="policy1"></select>
+            </label>
+            <label>Select Policy 2:
+                <select id="policy2"></select>
+            </label>
+            <button id="compare-btn">Compare</button>
+        </div>
+
+        <!-- Comparison Table -->
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th id="policy1-name">Policy 1</th>
+                    <th id="policy2-name">Policy 2</th>
+                </tr>
+            </thead>
+            <tbody id="comparison-results">
+                <tr><td>Premium</td><td>--</td><td>--</td></tr>
+                <tr><td>Coverage</td><td>--</td><td>--</td></tr>
+                <tr><td>Claim Process</td><td>--</td><td>--</td></tr>
+                <tr><td>Exclusions</td><td>--</td><td>--</td></tr>
+                <tr><td>User Ratings</td><td>--</td><td>--</td></tr>
+            </tbody>
+        </table>
+
+        <button id="download-btn">Download Comparison</button>
+    </div>
+</body>
+</html>

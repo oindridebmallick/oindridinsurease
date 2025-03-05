@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Reviews & Ratings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="reviews.js" defer></script>
+</head>
+<body>
+    <div class="review-container">
+        <h1>Insurance Reviews & Ratings</h1>
+
+        <!-- Select Insurance Policy -->
+        <label for="policy-select">Choose an Insurance Policy:</label>
+        <select id="policy-select">
+            <option value="XYZ Health Plus">XYZ Health Plus</option>
+            <option value="SecureLife Plan">SecureLife Plan</option>
+            <option value="ABC Gold Plan">ABC Gold Plan</option>
+        </select>
+
+        <!-- Star Rating -->
+        <div class="star-rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐⭐</span>
+            <span data-value="3">⭐⭐⭐</span>
+            <span data-value="4">⭐⭐⭐⭐</span>
+            <span data-value="5">⭐⭐⭐⭐⭐</span>
+        </div>
+
+        <!-- Review Input -->
+        <textarea id="review-text" placeholder="Write your review here..."></textarea>
+        <button id="submit-review">Submit Review</button>
+
+        <!-- Filter Reviews -->
+        <h2>All Reviews</h2>
+        <label for="filter-rating">Filter by Rating:</label>
+        <select id="filter-rating">
+            <option value="all">All</option>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+        </select>
+
+        <!-- Reviews List -->
+        <div id="reviews-list"></div>
+    </div>
+</body>
+</html>

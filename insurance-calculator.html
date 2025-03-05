@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="insurance-calculator.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Insurance Cost Calculator</h1>
+        <form id="insurance-form">
+            <label>Age: <input type="number" id="age" min="18" max="100" required></label>
+            <label>Annual Income: <input type="number" id="income" required></label>
+            <label>Coverage Type: 
+                <select id="coverage">
+                    <option value="health">Health Insurance</option>
+                    <option value="life">Life Insurance</option>
+                    <option value="vehicle">Vehicle Insurance</option>
+                </select>
+            </label>
+            <label>Policy Term (Years): <input type="number" id="term" min="1" max="50" required></label>
+            <label>Existing Medical Conditions:
+                <select id="medical">
+                    <option value="none">None</option>
+                    <option value="minor">Minor</option>
+                    <option value="major">Major</option>
+                </select>
+            </label>
+            <button type="button" id="calculate-btn">Calculate</button>
+        </form>
+
+        <h2>Estimated Premium: <span id="premium-result">---</span></h2>
+
+        <canvas id="premiumChart"></canvas>
+
+        <h2>Compare Policies</h2>
+        <table class="policy-table">
+            <thead>
+                <tr>
+                    <th>Provider</th>
+                    <th>Premium</th>
+                    <th>Coverage</th>
+                    <th>Apply</th>
+                </tr>
+            </thead>
+            <tbody id="policy-results">
+                <!-- Policy comparison data will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
