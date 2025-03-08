@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     let policies = [
-        { name: "XYZ Health Plus", premium: "$500/year", coverage: "Full Coverage", claim: "Easy", exclusions: "Pre-existing diseases", rating: "4.5⭐" },
-        { name: "SecureLife Plan", premium: "$400/year", coverage: "Basic Coverage", claim: "Moderate", exclusions: "Maternity, Dental", rating: "4.0⭐" },
-        { name: "ABC Gold Plan", premium: "$600/year", coverage: "Premium Coverage", claim: "Fast", exclusions: "Cosmetic Treatments", rating: "4.8⭐" },
+        { name: "XYZ Health Plus", premium: "$11/year", coverage: "Full Coverage", claim: "Easy", exclusions: "Pre-existing diseases", rating: "4.5⭐" },
+        { name: "SecureLife Plan", premium: "$20/year", coverage: "Basic Coverage", claim: "Moderate", exclusions: "Maternity, Dental", rating: "4.0⭐" },
+        { name: "ABC Gold Plan", premium: "$15/year", coverage: "Premium Coverage", claim: "Fast", exclusions: "Cosmetic Treatments", rating: "4.8⭐" },
+        { name: "Niramaya Health Scheme", premium: "$6.25/year", coverage: "Premium Coverage", claim: "Fast", exclusions: "Cosmetic Treatments", rating: "4.9⭐" },
     ];
 
     let policy1Select = document.getElementById("policy1");
