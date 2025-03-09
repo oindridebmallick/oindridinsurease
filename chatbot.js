@@ -17,7 +17,7 @@ function sendMessage() {
 
 function getBotResponse(input) {
     input = input.toLowerCase();
-    if (input.includes("health insurance")) return "Health insurance covers medical expenses for illnesses and injuries.";
+    if (input.includes("health insurance")) return "Health insurance provides financial coverage for medical expenses incurred due to illnesses, injuries, and other healthcare needs. It helps policyholders manage the costs of doctor visits, hospital stays, prescription medications, surgeries, and preventive care, ensuring access to necessary treatments while reducing out-of-pocket expenses.";
     if (input.includes("auto insurance")) return "Auto insurance protects against financial losses due to accidents.";
     if (input.includes("fraud detection")) return "AI can help detect fraudulent claims by analyzing past trends.";
     
